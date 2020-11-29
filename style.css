@@ -1,0 +1,69 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  
+}
+
+
+#cards{
+  width: 260px;
+}
+@media only screen and (max-width: 575px){
+#cards{
+  width: 95%;
+}
+}
+
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://cdn.get.tech/blog/wp-content/uploads/2020/02/tech-student-portfolio.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 20px 20px 20px #b7b7b7;
+      
+     
+      
+}
+
+.hero-text {
+  font-family: 'Vollkorn', serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  border-radius: 7px;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.free:before{
+  content: '';
+  width: 100px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  margin-top: -5px;
+  z-index: -2;
+}
