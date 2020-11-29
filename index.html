@@ -11,6 +11,11 @@
 
 
 
+<!--font-awesome icons link-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -145,15 +150,80 @@ margin-top: 50px;">My Services</h1><center>
 
 <br>
 <br>
-<h1 style="font-family: 'Lobster', cursive;">My Skills !</h1>
+<h1 style="font-family: 'Lobster', cursive;">Stats Speak my Work</h1>
 <hr  width="30%;"></hr>
 
 
 
 
+<!-- start count stats -->
+
+<section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3 stats">
+        <i class="fa fa-code" aria-hidden="true"></i>
+        <div class="counting" data-count="10000">0</div>
+        <h5 style="font-family: 'Lora', serif ;">Lines of code</h5>
+      </div>
+
+      <div class="col-lg-3 stats">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <div class="counting" data-count="100">0</div>
+        <h5 style="font-family: 'Lora', serif ;">Projects done</h5>
+      </div>
+
+      <div class="col-lg-3 stats">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <div class="counting" data-count="40">0</div>
+        <h5 style="font-family: 'Lora', serif ;">Happy clients</h5>
+      </div>
+
+      <div class="col-lg-3 stats">
+        <i class="fa fa-cogs" aria-hidden="true"></i>
+        <div class="counting" data-count="30">0</div>
+        <h5 style="font-family: 'Lora', serif ;">technology stacks known</h5>
+      </div>
 
 
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
 
+</section>
+
+<!-- end cont stats -->
+
+<script type="text/javascript">
+  // number count for stats, using jQuery animate
+
+$('.counting').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 11000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+    }
+
+  });  
+  
+
+});
+</script>
 </body>
 </html>
 

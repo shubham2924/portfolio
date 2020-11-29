@@ -67,3 +67,35 @@ body, html {
   margin-top: -5px;
   z-index: -2;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*/ start count stats /*/
+
+section#counter-stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.stats {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stats .fa {
+  color: #0ec78f;
+  font-size: 60px;
+}
+
+/*/ end count stats /*/
