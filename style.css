@@ -4,18 +4,6 @@ body, html {
   
 }
 
-
-#cards{
-  width: 260px;
-}
-@media only screen and (max-width: 575px){
-#cards{
-  width: 99%;
-}
-}
-
-
-
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://cdn.get.tech/blog/wp-content/uploads/2020/02/tech-student-portfolio.jpg");
   height: 80%;
@@ -24,9 +12,6 @@ body, html {
   background-size: cover;
   position: relative;
   box-shadow: 20px 20px 20px #b7b7b7;
-      
-     
-      
 }
 
 .hero-text {
@@ -122,6 +107,11 @@ section#counter-stats {
   }
 }
 
+
+
+
+
+
 @media screen and (max-width: 428px) {
   .column {
     width: 100%;
@@ -140,4 +130,116 @@ section#counter-stats {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.socials a{
+  border: 1px #f00;
+  width: 55px;
+  height: 60px;
+  padding-top: 5px;
+  margin-right: 5px;
+  font-size: 25px;
+  border-radius: 6px;
+  display: inline-block;
+  color: #fff;
+}
+.links ul a{
+  margin-top: 10px;
+  padding-top: 100px;
+  color: #fff;
+}
+
+
+.column1 {
+  float: left;
+  width: 33%;
+  padding: 0 25px;
+}
+/* Responsive column1 */
+@media screen and (max-width: 750px) {
+  .column1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2px;
+
+}
+
+.container .box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 420px;
+  margin: 20px;
+  background: #121e27;
+}
+
+.container .box .content{
+  padding: 30px;
+  text-align: center;
+}
+
+.container .box .content .quote{
+  max-width: 48px;
+
+}
+
+.container .box .content p{
+  color: #fff;
+  padding: 20px 0;
+
+}
+
+.container .box .content .user{
+  max-width: 72px;
+  border-radius: 50%;
+
+
+}
+.container .box .content h3{
+  color: #33d1a0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+
+}
+
+@media (max-width: 1050px){
+  .container
+  {
+    justify-content: center;
+  }
+
+}
+@media (max-width: 768px){
+  .container .box
+  {
+width: 100%;
+height: auto;
+padding: 30px 20px;
+  }
+
+}
+.box{
+   border-radius: 10px;
 }
