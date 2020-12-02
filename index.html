@@ -5,7 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   
 <!--Javascript link of bootstrap-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
 
 <!--Google font links-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">-->
 
 
 <!--Linking CSS file with html-->
@@ -33,6 +33,24 @@
 
 </head>
 <body>
+<!--Navbar-->
+<div style="font-family: 'Lora', serif ;" class="navbar">
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+
+  </label>
+  
+  <ul class="navul">
+    <li><a class="active" href="#testimonis">HOME</a></li>
+    <li><a href="#service">MY SERVICES</a></li>
+    <li><a href="#testimonis">TESTIMONIALS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+</div>
+
 
 
 <!--Hero Image-->
@@ -46,7 +64,7 @@
 <!--End of Hero Image-->
 <br><br><br>
 
-<center><h1 style="font-family: 'Lobster', cursive;">My services</h1></center>
+<center><h1 id="service" style="font-family: 'Lobster', cursive;">My services</h1></center>
 <hr  width="30%;"></hr><br>
 <!--My services cards-->
 <div class="row">
@@ -170,7 +188,8 @@ $('.counting').each(function() {
 });
 </script>
 <br>
-<center><h1 style="font-family: 'Lobster', cursive;">Testimonials</h1></center>
+<div id="testimonis">
+<center><h1 style="font-family: 'Lobster', cursive;">Testimonials</h1></center></div>
 <hr  width="30%;"></hr>
 <br>
 
@@ -183,8 +202,8 @@ $('.counting').each(function() {
     <div class="content">
       <img src="https://icon2.cleanpng.com/20180330/roq/kisspng-quotation-marks-in-english-punctuation-quote-5abeaef2496600.8164014915224460663007.jpg" class="quote">
       <p>sources that are designated for a company’s use. One of the most popular reasons behind server hosting is the security g</p>
-      <img src="https://icon2.cleanpng.com/20180330/roq/kisspng-quotation-marks-in-english-punctuation-quote-5abeaef2496600.8164014915224460663007.jpg" class="user" height="50px" width="50px">
-      <h3>Shubham Metkar</h3>
+      <img src="https://www.whitehouse.gov/wp-content/uploads/2017/11/President-Trump-Official-Portrait-1024x1297.jpg" class="user" height="60px" width="60px">
+      <h3>Donald Trump </h3>
      </div>
   </div>
 
@@ -192,8 +211,8 @@ $('.counting').each(function() {
     <div class="content">
       <img src="https://icon2.cleanpng.com/20180330/roq/kisspng-quotation-marks-in-english-punctuation-quote-5abeaef2496600.8164014915224460663007.jpg" class="quote">
       <p>sources that are designated for a company’s use. One of the most popular reasons behind server hosting is the security g</p>
-      <img src="https://icon2.cleanpng.com/20180330/roq/kisspng-quotation-marks-in-english-punctuation-quote-5abeaef2496600.8164014915224460663007.jpg" class="user" height="50px" width="50px">
-      <h3>Shubham Metkar</h3>
+      <img src="https://m.economictimes.com/thumb/msid-71346771,width-1200,height-900,resizemode-4,imgsize-261905/modi.jpg" class="user" height="60px" width="60px">
+      <h3>Narendra Modi</h3>
     </div>
   </div>
 
@@ -201,8 +220,8 @@ $('.counting').each(function() {
     <div class="content">
       <img src="https://icon2.cleanpng.com/20180330/roq/kisspng-quotation-marks-in-english-punctuation-quote-5abeaef2496600.8164014915224460663007.jpg" class="quote">
       <p>sources that are designated for a company’s use. One of the most popular reasons behind server hosting is the security g</p>
-      <img src="https://icon2.cleanpng.com/20180330/roq/kisspng-quotation-marks-in-english-punctuation-quote-5abeaef2496600.8164014915224460663007.jpg" class="user" height="50px" width="50px">
-      <h3>Shubham Metkar</h3>
+      <img src="https://media.newyorker.com/photos/5a94746cacbab20be85abab2/1:1/w_2000,h_2000,c_limit/Osnos-Xi-Jinping-May-Be-President-for-Life.jpg" class="user" height="60px" width="60px">
+      <h3>Xi JInping</h3>
       
     </div>
   </div>
@@ -217,7 +236,7 @@ $('.counting').each(function() {
 
       <div class="column1">
          <div style="text-align: left; padding-top: 50px;" class="footer-section contact">
-      <h1 style="color: #0EC78F; font-family: 'Lobster', cursive;">Contact Me !</h1>
+      <h1 id="contact" style="color: #0EC78F; font-family: 'Lobster', cursive;">Contact Me !</h1>
       <hr style="background-color: #fff;"></hr>
       <p style="color: #fff; font-size: 18px; font-family: 'Lora', serif ;"><i style="font-size: 30px;" class="fa fa-map-marker" aria-hidden="true"></i>
 rud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit inth</p>
