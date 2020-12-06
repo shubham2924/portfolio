@@ -12,7 +12,7 @@ body, html {
 
 
 /*...........................Navigation bar complete styling here............................*/
-/*nav{
+nav{
  background: #0ec78f;
  height: 80px; 
  width: 100%;
@@ -107,14 +107,14 @@ a.active, a:hover{
     height: 80px;
   }
 }
-*/
+
 /*...........................Complete end of Navigation bar styling............................*/
 
 
 
 
 /*................................Hero image and text on it..........................*/
-/*
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
   url("https://cdn.get.tech/blog/wp-content/uploads/2020/02/tech-student-portfolio.jpg");
@@ -153,7 +153,7 @@ a.active, a:hover{
   background-color: #555;
   color: white;
 }
-*/
+
 /*....... hero section styling ends here let's move to services card's styling......*/
 
 
@@ -162,24 +162,24 @@ a.active, a:hover{
 /*.................................column and row class styling here...........................*/
 
 /* Float four columns side by side */
-/*
+
 .column {
   float: left;
   width: 25%;
   padding: 0 25px;
 }
-*/
+
 
 /* Remove extra left and right margins, due to padding */
 
-/*
+
 .row {margin: 0 -5px;}
-*/
+
 
 
 /* Responsive columns */
 
-/*
+
 @media screen and (max-width: 768px) {
   .column {
     width: 50%;
@@ -195,13 +195,13 @@ a.active, a:hover{
     margin-bottom: 20px;
   }
 }
-*/
+
 
 /*from column class styling upto this comment the logic of CSS 
 will be used same for my services cards and stats counter stuff*/
 
 /* Style the counter cards */
-/*
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -212,11 +212,11 @@ will be used same for my services cards and stats counter stuff*/
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
-*/
+
 
 
 /*/ start count stats /*/
-/*
+
 section#counter-stats {
   display: flex;
   justify-content: center;
@@ -234,7 +234,7 @@ section#counter-stats {
   color: #0ec78f;
   font-size: 60px;
 }
-*/
+
 /*/ end count stats /*/
 
 
@@ -242,7 +242,7 @@ section#counter-stats {
 
 
 /*.............................Complete styling of the testimonial section................................*/
-/*
+
 .test{
   display: flex;
   justify-content: center;
@@ -314,7 +314,7 @@ padding: 30px 20px;
 .box{
    border-radius: 10px;
 }
-*/
+
 
 /*......Done with testimonial styling here let's move to footer and wrap up the website......*/
 
@@ -323,7 +323,7 @@ padding: 30px 20px;
 
 /*.................................Styling of the Footer section................................*/
 
-/*
+
 .socials a{
   border: 1px #f00;
   width: 55px;
@@ -347,17 +347,17 @@ padding: 30px 20px;
   width: 33%;
   padding: 0 25px;
 }
-*/
+
 
 /* Responsive column1 */
 
-/*@media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .column1 {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-}*/
+}
 
 /*.......................Ohh man finally done, huh!!!!!!!...........................*/
 
