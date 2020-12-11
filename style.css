@@ -3,11 +3,175 @@ body, html {
   margin: 0;
   scroll-behavior: smooth;
 }
+/*===== VARIABLES CSS =====*/
+:root{
+  /*===== Colors =====*/
+  --first-color: #212529;
+  --input-color: #212529;
+  --border-color: #DADCE0;
+}
+
+
+
+/*===== FORM =====*/
+.l-form{
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+.form{
+  width: 325px;
+  height: 475px;
+  padding: 30px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(92,99,105,.2);
+}
+.form__title{
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+.form__div{
+  position: relative;
+  height: 48px;
+  margin-bottom: 24px;
+}
+.form__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+  padding: 16px;
+  background: none;
+  z-index: 1;
+}
+.form__label{
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  padding: 0 4px;
+  background-color: #fff;
+  color: var(--input-color);
+  font-size: var(--normal-font-size);
+  transition: .3s;
+}
+.form__button{
+  display: block;
+  margin-left: auto;
+  padding: 12px 32px;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+.form__button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.25);
+}
+
+/*Input focus move up label*/
+.form__input:focus + .form__label{
+  top: -8px;
+  left: 12.8px;
+  color: var(--first-color);
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+/*Input focus sticky top label*/
+.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label{
+  top: -8px;
+  left: 12.8px;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 1;
+}
+
+/*Input focus*/
+.form__input:focus{
+  border: 1.5px solid var(--first-color);
+}
 
 * {
   box-sizing: border-box;
 }
 
+ 
+
+@media (max-width: 1600px){
+  .page{
+    margin: 0 275px 0 275px;
+  }
+}
+@media (max-width: 1200px){
+  .page{
+    margin: 0 150px 0 150px;
+  }
+}
+@media (max-width: 600px){
+  .page{
+    margin: 0 10px 0 10px;
+  }
+}     
+.page {
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1.5px solid #212529;
+  
+  background-color: #ddd;
+}
+
+.page p {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+.skill-container {
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  box-shadow: 1px 4px 4px rgba(0,0,0,0.3);
+}
+.skills {
+  padding-right: 5px;
+  text-align: right;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+.html {
+  background-color: #f60;
+  height: 20px;
+  width: 85%;
+}
+.css {
+  background-color: #01B5F2;
+  height: 20px;
+  width: 80%;
+}
+.js {
+  background-color: #0ec78f;
+  height: 20px;
+  width: 45%;
+}
+.php {
+  background-color: #6e0dd0;
+  height: 20px;
+  width: 60%;
+}
+.python {
+  background-color: #212529;
+  height: 20px;
+  width: 50%;
+}
 
 
 
@@ -16,7 +180,7 @@ nav{
  background: #0ec78f;
  height: 80px; 
  width: 100%;
- z-index: 1;
+ z-index: 10;
  position: fixed;
  top: 0;
  left: 0;
