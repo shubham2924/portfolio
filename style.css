@@ -147,6 +147,14 @@ body, html {
   color: white;
   font-weight: 600;
 }
+.load{
+  animation: loading 12s linear;
+}
+
+@keyframes loading{
+ 0%{width: 0%}
+}
+
 .html {
   background-color: #f60;
   height: 20px;
