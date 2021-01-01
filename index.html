@@ -39,6 +39,10 @@
   </ul>
 </nav>
 </div>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
 
 <!--.............................End of the navigation Section....................................-->
 
@@ -203,6 +207,76 @@ $('.counting').each(function() {
   </div>
 </div>
 <br><br><br><br>
+
+<center><h1 data-aos="fade-down" data-aos-duration="2000" style="font-family: 'Lobster', cursive;">Journey Till Now</h1></center>
+<hr width="30%;"></hr>
+<br><br>
+<div class="journey">
+<div class="timeline">
+  <div data-aos="fade-right"
+     data-aos-offset="300" data-aos-duration="550"
+     data-aos-easing="ease-in-sine" class="container1 left">
+    <div class="content1">
+      <h2>2017</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div data-aos="fade-left"
+     data-aos-offset="300" data-aos-duration="550"
+     data-aos-easing="ease-in-sine" class="container1 right">
+    <div class="content1">
+      <h2>2016</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div data-aos="fade-right"
+     data-aos-offset="300" data-aos-duration="550"
+     data-aos-easing="ease-in-sine" class="container1 left">
+    <div class="content1">
+      <h2>2015</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div data-aos="fade-left"
+     data-aos-offset="300" data-aos-duration="550"
+     data-aos-easing="ease-in-sine" class="container1 right">
+    <div class="content1">
+      <h2>2012</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div data-aos="fade-right"
+     data-aos-offset="300" data-aos-duration="550"
+     data-aos-easing="ease-in-sine" class="container1 left">
+    <div class="content1">
+      <h2>2011</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div data-aos="fade-left"
+     data-aos-offset="300" data-aos-duration="550"
+     data-aos-easing="ease-in-sine" class="container1 right">
+    <div class="content1">
+      <h2>2007</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<br><br><br>
+
+
+
+
+
+
 <!--.............................Start of the Testimonial Section..............................-->
 
 <div id="testimonis">
@@ -336,6 +410,18 @@ $('.counting').each(function() {
   <script>
     AOS.init();
   </script>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
 
 
 </body>
