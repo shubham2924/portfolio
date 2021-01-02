@@ -3,6 +3,31 @@ body, html {
   margin: 0;
   scroll-behavior: smooth;
 }
+.animnav{
+  margin-top: 30px;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
 /*===== VARIABLES CSS =====*/
 :root{
   /*===== Colors =====*/
@@ -345,7 +370,7 @@ a.active, a:hover{
 /* Remove extra left and right margins, due to padding */
 
 
-.row {margin: 0 -5px;}
+.row {margin: 0 0px;}
 
 
 
@@ -499,14 +524,19 @@ padding: 30px 20px;
 .socials a{
   border: 1px #f00;
   width: 55px;
-  height: 60px;
-  padding-top: 5px;
+  height: 55px;
+  padding: 0px 10px 10px 10px;
   margin-right: 5px;
-  font-size: 25px;
+  font-size: 35px;
   border-radius: 6px;
   display: inline-block;
   color: #fff;
 }
+
+.socials a:hover{
+  color: #0ec78f;
+}
+
 .links ul a{
   margin-top: 10px;
   padding-top: 100px;

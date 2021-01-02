@@ -28,14 +28,23 @@
 <nav>
   <input type="checkbox" id="check">
   <label for="check" class="checkbtn">
-    <i class="fa fa-bars" aria-hidden="true"></i>
+    <!--<i class="fa fa-bars" aria-hidden="true"></i>-->
+    <div class="animnav" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
   </label>
-  
   <ul class="navul">
-    <li><a class="active" href="#top">HOME</a></li>
-    <li><a href="#service">MY SERVICES</a></li>
-    <li><a href="#testimonis">TESTIMONIALS</a></li>
-    <li><a href="#contact">CONTACT</a></li>
+    <li><a class="active" href="#top"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;HOME</a></li>
+    <li><a href="#service"><i class="fa fa-list-ul" aria-hidden="true"></i>
+MY SERVICES</a></li>
+    <li><a href="#timeline"><i class="fa fa-clock-o" aria-hidden="true"></i>
+TIMELINE   </a></li>
+    <li><a href="#testimonis"><i class="fa fa-users" aria-hidden="true"></i>
+TESTIMONIALS</a></li>
+    <li><a href="#contact"><i class="fa fa-phone" aria-hidden="true"></i>
+CONTACT</a></li>
   </ul>
 </nav>
 </div>
@@ -208,7 +217,7 @@ $('.counting').each(function() {
 </div>
 <br><br><br><br>
 
-<center><h1 data-aos="fade-down" data-aos-duration="2000" style="font-family: 'Lobster', cursive;">Journey Till Now</h1></center>
+<center><h1 id="timeline" data-aos="fade-down" data-aos-duration="2000" style="font-family: 'Lobster', cursive;">Journey Till Now</h1></center>
 <hr width="30%;"></hr>
 <br><br>
 <div class="journey">
@@ -419,6 +428,12 @@ function myFunction() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
 }
 </script>
 
