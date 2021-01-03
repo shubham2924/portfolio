@@ -61,8 +61,18 @@ CONTACT</a></li>
 
 <div id="top" class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px;margin-top: 55px;">Hello, I'm Shubham Metkar</h1>
-    <h3 class="free" style="color: #0ec78f;">And I'm a Freelancer</h3>
+    <h1 data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="700" style="font-size:50px;margin-top: 55px;">Hello. I'm Shubham Metkar</h1>
+
+
+
+     <div class="container2">
+    <p>And I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+  </div>
+
+
+
     <button>Get In Touch</button>
   </div>
 </div>
@@ -437,6 +447,52 @@ function myFunction(x) {
 }
 </script>
 
+
+
+
+<script type="text/javascript">
+  const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Programmer", "Guitarist", "Engineer", "Student"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+</script>
 
 </body>
 </html>
