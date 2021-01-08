@@ -424,7 +424,7 @@ a.active, a:hover{
   }
   nav ul{
     position: fixed;
-    width: 75%;
+    width: 70%;
     height: 722px;
     background: #212529;
     top: 80px;
@@ -434,6 +434,8 @@ a.active, a:hover{
   }
   .navbar nav ul li{
     display: block;
+    text-align: left;
+    margin-left: 10px;
   }
   nav ul li a{
     font-size: 20px;
