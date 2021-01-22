@@ -105,7 +105,7 @@ CONTACT</a></li>
   
   <div class="column" data-aos="zoom-in" data-aos-duration="2000">
     <div class="card">
-      <img src="https://www.vegamoontech.com/wp-content/uploads/2020/10/mobile-app-dev.png" width="100%">
+      <img src="https://png.pngtree.com/png-vector/20200310/ourmid/pngtree-modern-flat-design-concept-of-mobile-app-development-with-characters-building-png-image_2157836.jpg" width="100%">
       <center><h3 style="font-family: 'Lora', serif ;">Mobile App Development</h3><hr  style="background-color: #ccc;" width="50%;"></hr></center>
       <p style="font-family: 'Lora', serif ;">Application development is the process of creating a computer program or a set of programs to perform the different tasks that a business requires.</p>
     </div>
@@ -165,10 +165,13 @@ CONTACT</a></li>
 </section>
 
 <br>
-
-
 <script type="text/javascript">
-  // number count for stats, using jQuery animate
+  $(window).scroll(function(){
+    var positiontop = $(document).scrollTop();
+    console.log(positiontop);
+    if (positiontop > 1500) {
+      // $('#counter-stats').addClass('counting');
+      // number count for stats, using jQuery animate
 
 $('.counting').each(function() {
   var $this = $(this),
@@ -180,7 +183,7 @@ $('.counting').each(function() {
 
   {
 
-    duration: 11000,
+    duration: 8000,
     easing:'linear',
     step: function() {
       $this.text(Math.floor(this.countNum));
@@ -194,7 +197,13 @@ $('.counting').each(function() {
   
 
 });
+    }
+  });
 </script>
+
+<!-- <script type="text/javascript">
+  
+</script> -->
 <br>
 
 <!--.............................End of the Stats Section....................................-->
