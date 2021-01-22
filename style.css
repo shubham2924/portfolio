@@ -528,6 +528,11 @@ a.active, a:hover{
   padding: 0 25px;
 }
 
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 0 25px;
+}
 
 /* Remove extra left and right margins, due to padding */
 
@@ -537,6 +542,24 @@ a.active, a:hover{
 
 
 /* Responsive columns */
+
+@media screen and (max-width: 768px) {
+  .column2 {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .column2 {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
 
 
 @media screen and (max-width: 768px) {
